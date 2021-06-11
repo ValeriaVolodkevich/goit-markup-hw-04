@@ -48,6 +48,29 @@ a {
   margin-left: 331px;
   margin-right: 50px;
 }
+.media-list-mail::before {
+  content: "";
+  display: block;
+  background-size: contain;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  background-size: cover;
+  background-color: var(--while-color);
+  background-repeat: no-repeat;
+  background-image: url("../image/icons.svg/envelope.svg");
+}
+.media-list-tel::before {
+  content: "";
+  display: block;
+  background-size: contain;
+  background-color: var(--while-color);
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  background-repeat: no-repeat;
+  background-image: url("../image/icons.svg/smartphone.svg");
+}
 .logo {
   color: rgba(0, 0, 0, 1);
   font-family: var(--accent-font);
@@ -92,16 +115,31 @@ a {
 }
 
 /*========style index============*/
-.hero {
-  background: var(--background-color);
+
+.overlay {
+  height: 600px;
+  max-width: 1600px;
+  outline: 1px solid black;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../image/backgroud.jpg");
+  background-color: var(--background-color);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
 .hero .container {
   padding-top: 200px;
   padding-right: auto;
   padding-bottom: 200px;
   padding-left: auto;
 }
-.hero .hero-content {
+.hero-content {
   margin-bottom: 30px;
   text-align: center;
   color: var(--while-color);
@@ -149,7 +187,30 @@ a {
 .my-working-text:not(:last-child) {
   margin-right: 30px;
 }
-
+.my-working-text::before {
+  display: block;
+  width: 270px;
+  height: 120px;
+  content: "";
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--while-color);
+  background-size: 70px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.my-working-text:nth-child(1)::before {
+  background-image: url("../image/icons.svg/antenna1.svg");
+}
+.my-working-text:nth-child(2)::before {
+  background-image: url("../image/icons.svg/clock1.svg");
+}
+.my-working-text:nth-child(3)::before {
+  background-image: url("../image/icons.svg/diagram1.svg");
+}
+.my-working-text:nth-child(4)::before {
+  background-image: url("../image/icons.svg/astronaut1.svg");
+}
 .text {
   color: var(--black-color);
   font-weight: 700;
@@ -398,7 +459,7 @@ a {
 .tel-list:hover,
 .tel-list:focus {
   color: var(--touch-color);
- 
+}
 
 /*цвет основного фона
 rgba(47, 48, 58, 1)*/
