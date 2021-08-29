@@ -68,12 +68,7 @@ img {
   align-items: center;
 }
 
-.media-list-mail {
-  margin-left: 331px;
-  margin-right: 50px;
-}
-
-.media-list-mail-link::before {
+.media-list-mail::before {
   content: "";
   background-image: url("../image/icons.svg/envelope.svg");
   display: block;
@@ -84,8 +79,9 @@ img {
   background-size: cover;
   background-color: var(--while-color);
   background-repeat: no-repeat;
+  margin-right: 10px;
 }
-.media-list-tel-link::before {
+.media-list-tel::before {
   content: "";
   display: block;
   background-size: contain;
@@ -95,6 +91,7 @@ img {
   margin-right: 10px;
   background-repeat: no-repeat;
   background-image: url("../image/icons.svg/smartphone.svg");
+  margin-right: 10px;
 }
 .media-list-mail:hover,
 .media-list-mail:focus,
@@ -471,7 +468,9 @@ h1 {
 /*=====style portfolio=========*/
 
 .portfolio-section {
+  width: 1200px;
   padding: 94px auto;
+  margin: auto;
 }
 
 .project {
@@ -542,6 +541,13 @@ h1 {
   border-bottom: 1px solid #eeeeee;
 }
 
+.portfolio-list:focus,
+.portfolio-list:hover {
+  background-color: var(--while-color);
+  box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.6),
+    0px 1px 1px rgba(0, 0, 0, 0.12);
+}
+
 .portfolio-item {
   padding-left: 24px;
   padding-top: 20px;
@@ -570,15 +576,21 @@ h1 {
 }
 
 /*===== footer======*/
+.footer-container {
+  display: flex;
+}
 .contacts {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 .contacts {
-  background-color: var(--background-color);
-}
+  background-color:  rgba(47, 48, 58, 1);
 
+}
+.adress-container {
+  margin-left: 215px;
+}
 .studio {
   color: var(--while-color);
 }
@@ -610,7 +622,47 @@ h1 {
 .tel-list:focus {
   color: var(--touch-color);
 }
-
+.footer-title {
+  font-family: var(--main-font);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: var(--while-color);
+  margin-bottom: 20px;
+}
+.footer-social {
+  display: block;
+  margin-right: auto;
+}
+.social-list-footer {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-link-footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-image: linear-gradient( 
+    rgba(255, 255, 255, 0.1),
+      rgba(0, 0, 0, 0.2));  
+  margin-right: 10px;
+}
+.social-list-link-footer:focus,
+.social-list-link-footer:hover {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+.social-list-icon-footer {
+  width: 20px;
+  height: 20px;
+}
 /*цвет основного фона
 rgba(47, 48, 58, 1)*/
 /*цвет героя
@@ -625,3 +677,6 @@ background: rgba(33, 33, 33, 1);
 /*цвет кнопки
 background: rgba(33, 150, 243, 1);
 */
+}
+
+
