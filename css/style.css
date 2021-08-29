@@ -324,6 +324,7 @@ h1 {
 .my-comands {
   padding-top: 94px;
   padding-bottom: 94px;
+  background-color: #f5f4fa;
 }
 
 .my-comands .title {
@@ -333,6 +334,9 @@ h1 {
 .comands-item {
   margin-top: 30px;
   margin-bottom: 30px;
+  padding-top: 30px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 .working-comands {
   display: flex;
@@ -370,6 +374,98 @@ h1 {
   font-size: 16px;
   line-height: 1.187;
   letter-spacing: 0.03em;
+  margin-bottom: 16px;
+}
+.social-list {
+  display: flex;
+  justify-content: space-between;
+}
+.social-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: #afb1b8;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+}
+.social-list-link:focus,
+.social-list-link:hover {
+  fill: #ffffff;
+  background-color: #2196f3;
+}
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+}
+/*========clients===========*/
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.clients .container {
+  margin: 0 auto;
+}
+.title-clients {
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.clients-list-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.clients-list-item {
+  width: 170px;
+  height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #afb1b8;
+}
+.icon1 {
+  width: 41px;
+  height: 47px;
+}
+.icon2 {
+  width: 40px;
+  height: 52px;
+}
+.icon3 {
+  width: 44px;
+  height: 42px;
+}
+.icon4 {
+  width: 85px;
+  height: 41px;
+}
+.icon5 {
+  width: 63px;
+  height: 46px;
+}
+.icon6 {
+  width: 94px;
+  height: 44px;
+}
+.clients-list-icon {
+  fill: #afb1b8;
+}
+.clients-list-icon:hover,
+.clients-list-icon:focus {
+  fill: #2196f3;
+}
+.clients-list-item:hover,
+.clients-list-item:focus {
+  border: 1px solid #2196f3;
+}
+.clients-list-link:focus,
+.clients-list-link:hover {
+  fill: #2196f3;
 }
 
 /*=====style portfolio=========*/
