@@ -93,7 +93,6 @@ img {
   fill: rgba(33, 150, 243, 1);
  
 }
-
 .logo {
   color: rgba(0, 0, 0, 1);
   font-family: var(--accent-font);
@@ -413,59 +412,29 @@ h1 {
   justify-content: space-between;
 }
 .clients-list-link {
+   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.clients-list-item {
-  cursor: pointer;
   width: 170px;
   height: 92px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid #AFB1B8;
+   border: 1px solid #AFB1B8;
   box-sizing: border-box;
   border-radius: 4px;
   }
-.icon1 {
-  width: 41px;
-  height: 47px;
-}
-.icon2 {
-  width: 40px;
-  height: 52px;
-}
-.icon3 {
-  width: 44px;
-  height: 42px;
-}
-.icon4 {
-  width: 85px;
-  height: 41px;
-}
-.icon5 {
-  width: 63px;
-  height: 46px;
-}
-.icon6 {
-  width: 94px;
-  height: 44px;
-}
-.clients-list-icon {
-  fill: #afb1b8;
-}
+  .clients-list-icon{
+    width: 106px;
+    height: 60px;
+    fill: #afb1b8;
+  }
 .clients-list-icon:hover,
-.clients-list-icon:focus {
-  fill: #2196f3;
-}
-.clients-list-item:hover,
-.clients-list-item:focus {
-  border: 1px solid #2196f3;
+.clients-list-icon:focus{
+  fill: #2196f3;  
 }
 .clients-list-link:focus,
-.clients-list-link:hover {
+.clients-list-link:hover{
   fill: #2196f3;
+  border: 1px solid #2196f3;
 }
 
 /*=====style portfolio=========*/
@@ -651,7 +620,7 @@ h1 {
   border-radius: 50%;
  background: rgba(255, 255, 255, 0.1); 
  }
- 
+
 .social-list-link-footer:focus,
 .social-list-link-footer:hover {
   fill: #ffffff;
